@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+<style>
+		body{
+			background: #8E44AD;
+		}
+		div{
+			width: 25%; 
+			height: 50px;
+			display: flex;
+			justify-content: space-around;
+			padding: 9px;
+			background: azure;
+			cursor: pointer;
+		}
+		div:hover{
+			opacity: 0.9;
+		}
+		#a{ flex: 1; background:#974722; color:#974722; }
+		#b{ flex: 1; background:#CEDB52; color:#CEDB52; }
+		#c{ flex: 1; background:#3BD639; color:#3BD639; }
+		#d{ flex: 1; background:#4A39D6; color:#4A39D6; }
+		#e{ flex: 1; background:#8339D6; color:#8339D6; }
+		#f{ flex: 1; background:#6CB34D; color:#6CB34D; }
+		
+		
+</style>
+</head>
+<body>
+	<div>
+		<a onclick="bgchange(id)" id="a">#974722</a>
+		<a onclick="bgchange(id)" id="b">#CEDB52</a>
+		<a onclick="bgchange(id)" id="c">#3BD639</a>
+		<a onclick="bgchange(id)" id="d">#4A39D6</a>
+		<a onclick="bgchange(id)" id="e">#8339D6</a>
+		<a onclick="bgchange(id)" id="f">#6CB34D</a>
+	
+	</div>
+	<h1 align="center">We Are Learning Js</h1>
+<script>
+	const bgchange = (r)=> 
+	{
+		document.body.style.background=document.getElementById(r).innerHTML;
+	}
+</script>
+</body>
+</html>
